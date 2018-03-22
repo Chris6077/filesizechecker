@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<!-- search bar from https://codepen.io/anon/pen/rOLrXm-->
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  			<title>File Size Checker</title>
+  			<link rel="stylesheet" href="./style.css"/>
+        <link rel="icon" href="https://raw.githubusercontent.com/Chris6077/Portfolio/master/images/logo.png">
+			<style type="text/css">
+			</style>
+		</head>
+		<body>
+        <div class="header">
+          <h1>
+            File size checker
+          </h1>
+        </div>
+    		<div class="container">
+          <h2>
+            Usage:
+            <p>
+              Upload a file and click submit to get a JSON with the file size in byte.
+            </p>
+          </h2>
+    			<form method="post" action="/submit" enctype="multipart/form-data">
+            <input type="file" name="file" id="file" class="inputfile"/>
+            <label for="file">Choose file</label>
+            <input type="submit" value="Submit">
+          </form>
+  			</div>
+  			<div id="footer">
+                <div class="col-md-8">
+                    <span>Copyright &copy; 2018 Christian Winkler</span>
+                </div>
+            </div>
+		</body>
+</html>

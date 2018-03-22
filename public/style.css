@@ -1,0 +1,112 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+* {
+  margin: 0;
+}
+html {
+  width: 1080px;
+  margin: 0 auto;
+}
+body {
+  background-color: #242424;
+}
+.header {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 150%;
+}
+.by {
+  text-align: right;
+  color: #DDDDDD;
+  background-color: #242424;
+  border-radius: 5px;
+  padding: 2.5%;
+  height: 50px;
+  margin: 5% auto;
+}
+.container {
+  background-color: #434343;
+  border-radius: 5px;
+  padding: 2.5%;
+  height: 100%;
+  margin: 5% auto;
+  margin-top: 10%;
+  padding-top: 7.5%;
+  text-align: center;
+  color: #DDDDDD;
+}
+.container p {
+  margin-top: 3%;
+  font-size: 80%;
+}
+.col-md-8 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  display: block;
+  margin-top: 15%;
+}
+input[type=submit] {
+  text-decoration: none;
+  background-color: #DD7777;
+  border-radius: 5px;
+  margin-left: 0;
+  padding: 2.5% 5% 2.5% 5%;
+  color: #DDDDDD;
+  border-style: none;
+  cursor: pointer;
+  width: 17.5%;
+  font-size: 100%;
+}
+input[type=submit]:hover{
+  box-shadow: inset 0 5px 5px 0 #434343;
+}
+input[type=file] label {
+  color: #DDDDDD;
+}
+form {
+  margin-top: 5%;
+  text-align: center;
+  margin-right: 4%;
+  margin-bottom: 3%;
+}
+a {
+  text-decoration: none;
+  color: #DDDDDD;
+}
+h1 {
+  font-family: "Pacifico";
+  color: #DDDDDD;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+  text-decoration: none;
+  background-color: #DD7777;
+  border-radius: 5px;
+  margin-left: 4%;
+  padding: 2.5% 5% 2.5% 5%;
+  color: #DDDDDD;
+  border-style: none;
+  cursor: pointer;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    box-shadow: inset 0 5px 5px 0 #434343;
+}
